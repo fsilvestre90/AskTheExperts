@@ -10,6 +10,7 @@ askExperts.factory('QuestionsFactory', function() {
             isAnswered: factory.isAnswered,
             answers: []
         });
+        //set form values to blank
         factory.questionDescription = null;
         factory.questionTitle = null;
         factory.userName = null;

@@ -4,13 +4,13 @@
         <h3>Do you have a question? <a a ui-sref="askQuestion" class="btn btn-primary">Ask an expert</a></h3>
     </div>
 </div>
-<div class="row">
-    <div class="col-md-8">
-        <div ng-hide="questions">
-            <h1>Here are questions not yet answered:</h1>
-            <ul>
-                <li ng-repeat='item in questions'><a ui-sref='question({ id: item.id})'>{{item.text}}</a></li>
-            </ul>
+<div ng-hide="questions">
+    <div class="row">
+        <div class="col-md-8">
+                <h1>Here are questions not yet answered:</h1>
+                <ul>
+                    <li ng-repeat='item in questions'><a ui-sref='question({ id: item.id})'>{{item.text}}</a></li>
+                </ul>
         </div>
     </div>
 </div>
