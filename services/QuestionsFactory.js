@@ -3,12 +3,16 @@ askExperts.factory('QuestionsFactory', function() {
     factory.questions = [];
     factory.addQuestion = function() {
         factory.questions.push({
-            id: factory.courses.length + 1,
-            question: factory.question,
-            isAnswered: false,
+            id: factory.questions.length + 1,
+            questionTitle: factory.questionTitle,
+            questionDescription: factory.questionDescription,
+            userName: factory.userName,
+            isAnswered: factory.isAnswered,
             answers: []
         });
-        factory.question = null;
+        factory.questionDescription = null;
+        factory.questionTitle = null;
+        factory.userName = null;
     };
     return factory;
 });
