@@ -2,18 +2,15 @@
 var askExperts = angular.module('askExperts', ['ui.router']);
 
 //create the routes
-askExperts.config(function($stateProvider, $urlRouterProvider) {
-    $stateProvider.state('home', {
-        url: "",
-        templateUrl: "partials/home.html",
-        controller: 'QuestionsCtrl'
-    });
-askExperts.config(function($stateProvider, $urlRouterProvider) {
-    $stateProvider.state('questions.answers', {
-        url: "/:questionId",
-        templateUrl: "partials/question.answers.html",
-        controller:'QuestionsCtrl'
-    });
-});
-
+    askExperts.config(function($stateProvider, $urlRouterProvider) {
+        $stateProvider.state('home', {
+            url: "",
+            templateUrl: "partials/home.html",
+            controller: 'QuestionCtrl'
+        });
+        $stateProvider.state('askQuestion', {
+            url: "/askQuestion",
+            templateUrl: "partials/askQuestion.html",
+            controller:'QuestionCtrl'
+        });
 });
