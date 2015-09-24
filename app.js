@@ -6,6 +6,7 @@ var askExperts = angular.module('askExperts', ['ui.router']);
             $stateProvider.state('home', {
                 url: "",
                 templateUrl: "partials/home.html",
+                controller: 'QuestionCtrl'
             })
             .state('askQuestion', {
                 url: "/askQuestion",
